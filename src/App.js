@@ -1,23 +1,33 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Nav from './components/Nav';
+import Hero from './components/Hero/index';
+import About from './components/About';
+import Special from './components/Special/index';
+import Chef from './components/Chef';
+import Video from './components/Video';
+import Awards from './components/Awards';
+import Gallery from './components/Gallery/index';
+import Newsletter from './components/Newsletter/index';
+import Footer from './components/Footer';
+import ScrollToTop from './components/ScrollToTop';
+import Contact from './components/Contact/index';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="relative w-screen overflow-hidden">
+      <Nav/>
+      <Hero />
+      <About />
+      <Special />
+      <Chef/>
+      <Video/>
+      <Awards/>
+      <Gallery/>
+      <Contact/>
+      <Newsletter />
+      <Footer />
+      <ScrollToTop />
     </div>
   );
 }
